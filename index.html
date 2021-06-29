@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./assets/css/reset.css" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <title>Form</title>
+  </head>
+  <body>
+    <article class="article">
+      <header class="header">
+        <h1 class="header-title">Registery</h1>
+        <p class="header-text">
+          Create your account, it's free and only takes a minute
+        </p>
+      </header>
+      <section>
+        <form action="#" method="GET" class="form">
+          <div class="personalData">
+            <label for="firstName"></label>
+            <input
+              class="input firstName"
+              type="text"
+              id="firstName"
+              name="firstName"
+              placeholder="First Name"
+              autofocus
+              required
+              pattern="^[A-Z][a-z]{1,32}$"
+            />
+            <label for="lastName"></label>
+            <input
+              class="input lastName"
+              type="text"
+              id="lastName"
+              name="lastName"
+              placeholder="Last Name"
+              required
+              pattern="^[A-Z][a-z]{1,32}$"
+            />
+          </div>
+          <label for="email"></label>
+          <input
+            class="input"
+            type="email"
+            id="email"
+            name="email"
+            placeholder="Email"
+            required
+            pattern="^[A-Za-z0-9]{1,32}@[a-z]{1,9}\.[a-z]{1,4}$"
+          />
+          <label for="password"></label>
+          <input
+            class="input"
+            type="password"
+            id="password"
+            name="password"
+            placeholder="Password"
+            required
+          />
+          <label for="confirmPassword"></label>
+          <input
+            class="input"
+            type="password"
+            id="confirmPassword"
+            name="confirmPassword"
+            placeholder="Confirm Password"
+            required
+          />
+          <label for="isAccept">
+            <input
+              class="input"
+              type="checkbox"
+              id="isAccept"
+              name="isAccept"
+              required
+            />I accept the <a href="#" class="termsOfUse">Terms Of Use</a> &
+            <a href="#" class="termsOfUse">Privacy Policy.</a>
+          </label>
+
+          <button class="btn" type="submit">Register Now</button>
+        </form>
+      </section>
+    </article>
+  </body>
+</html>
