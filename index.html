@@ -9,80 +9,71 @@
     <title>Form</title>
   </head>
   <body>
-    <article class="article">
-      <header class="header">
-        <h1 class="header-title">Registery</h1>
-        <p class="header-text">
-          Create your account, it's free and only takes a minute
-        </p>
-      </header>
-      <section>
-        <form action="#" method="GET" class="form">
-          <div class="personalData">
-            <label for="firstName"></label>
-            <input
-              class="input firstName"
-              type="text"
-              id="firstName"
-              name="firstName"
-              placeholder="First Name"
-              autofocus
-              required
-              pattern="^[A-Z][a-z]{1,32}$"
-            />
-            <label for="lastName"></label>
-            <input
-              class="input lastName"
-              type="text"
-              id="lastName"
-              name="lastName"
-              placeholder="Last Name"
-              required
-              pattern="^[A-Z][a-z]{1,32}$"
-            />
-          </div>
-          <label for="email"></label>
+    <article class="registration-form">
+      <h1 class="title"><span class="title-text">Registery</span></h1>
+      <p class="text">Create your account, it's free and only takes a minute</p>
+      <form action="#" method="GET" class="form">
+        <div class="personal-data">
+          <input
+            class="input first-name"
+            type="text"
+            id="firstName"
+            name="firstName"
+            placeholder="First Name"
+            autofocus
+            required
+            pattern="^[A-Z][a-z]{1,32}$"
+          />
+          <input
+            class="input last-name"
+            type="text"
+            id="lastName"
+            name="lastName"
+            placeholder="Last Name"
+            required
+            pattern="^[A-Z][a-z]{1,32}$"
+          />
+        </div>
+        <input
+          class="input"
+          type="email"
+          id="email"
+          name="email"
+          placeholder="Email"
+          required
+          pattern="^[A-Za-z0-9]{1,32}@[a-z]{1,9}\.[a-z]{1,4}$"
+        />
+        <input
+          class="input"
+          type="password"
+          id="password"
+          name="password"
+          placeholder="Password"
+          required
+        />
+        <input
+          class="input"
+          type="password"
+          id="confirmPassword"
+          name="confirmPassword"
+          placeholder="Confirm Password"
+          required
+        />
+        <label for="isAccept" class="is-accept">
           <input
             class="input"
-            type="email"
-            id="email"
-            name="email"
-            placeholder="Email"
-            required
-            pattern="^[A-Za-z0-9]{1,32}@[a-z]{1,9}\.[a-z]{1,4}$"
-          />
-          <label for="password"></label>
-          <input
-            class="input"
-            type="password"
-            id="password"
-            name="password"
-            placeholder="Password"
+            type="checkbox"
+            id="isAccept"
+            name="isAccept"
             required
           />
-          <label for="confirmPassword"></label>
-          <input
-            class="input"
-            type="password"
-            id="confirmPassword"
-            name="confirmPassword"
-            placeholder="Confirm Password"
-            required
-          />
-          <label for="isAccept">
-            <input
-              class="input"
-              type="checkbox"
-              id="isAccept"
-              name="isAccept"
-              required
-            />I accept the <a href="#" class="termsOfUse">Terms Of Use</a> &
-            <a href="#" class="termsOfUse">Privacy Policy.</a>
-          </label>
-
-          <button class="btn" type="submit">Register Now</button>
-        </form>
-      </section>
+          <span
+            >I accept the<a href="#" class="terms-of-use">Terms Of Use</a> &
+            <a href="#" class="terms-of-use">Privacy Policy.</a></span
+          >
+        </label>
+        <button class="btn" type="submit">Register Now</button>
+      </form>
     </article>
   </body>
 </html>

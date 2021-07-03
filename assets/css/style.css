@@ -3,8 +3,7 @@
   margin: 0;
   padding: 0;
 }
-
-.article {
+.registration-form {
   max-width: 450px;
   margin: 0 auto;
   padding: 20px;
@@ -13,35 +12,39 @@
   font-family: Arial, Helvetica, sans-serif;
   font-size: 12px;
 }
-.header-title,
-.header-text {
-  text-align: center; 
+.title,
+.text {
+  text-align: center;
 }
-.header-title,
+.title,
+.title-text,
 .btn {
   overflow: hidden;
   text-overflow: ellipsis;
 }
-.header-title {
+.title {
   padding: 20px;
   font-size: 30px;
   display: flex;
   align-items: center;
 }
-.header-title::before,
-.header-title::after {
-  content: "";  
+.title-text {
+  max-width: 80%;
+}
+.title::before,
+.title::after {
+  content: "";
   height: 2px;
   background-color: grey;
   flex-grow: 1;
 }
-.header-title::before {
+.title::before {
   margin-right: 10px;
 }
-.header-title::after{
+.title::after {
   margin-left: 10px;
 }
-.header-text {
+.text {
   margin-bottom: 20px;
 }
 .form {
@@ -59,14 +62,18 @@
   color: white;
   font-weight: bold;
 }
-.personalData {
+.personal-data {
   display: flex;
 }
-.firstName,
-.lastName {
+.first-name,
+.last-name {
   width: 50%;
 }
-.termsOfUse {
+.is-accept {
+  display: flex;
+  align-items: center;
+}
+.terms-of-use {
   color: green;
   text-decoration: none;
 }
