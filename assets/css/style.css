@@ -21,6 +21,7 @@
 .btn {
   overflow: hidden;
   text-overflow: ellipsis;
+  white-space: nowrap;
 }
 .title {
   padding: 20px;
@@ -51,7 +52,10 @@
   display: flex;
   flex-direction: column;
 }
-.input,
+.input {
+  margin: 10px 0;
+  padding: 10px;
+}
 .btn {
   margin: 10px;
   padding: 10px;
@@ -64,10 +68,10 @@
 }
 .personal-data {
   display: flex;
+  justify-content: space-between;
 }
-.first-name,
-.last-name {
-  width: 50%;
+.small-input {
+  width: 45%;
 }
 .is-accept {
   display: flex;
